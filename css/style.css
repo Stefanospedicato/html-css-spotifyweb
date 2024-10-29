@@ -174,3 +174,13 @@ footer{
   }
 }
 
+@media screen and (max-width:600px){
+
+  aside{
+    width: 50px;
+  }
+
+  main .container{
+    width: calc(100%-50px);
+  }
+}
