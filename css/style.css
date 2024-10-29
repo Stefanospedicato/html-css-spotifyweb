@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 :root{
   --primary-color:#141922;
   --sec-color:#080B12;
@@ -19,31 +23,63 @@
   border: 1px solid black;
 }
 
-/* header{
-  height: 90px;
-} */
-
 main{
-  height: calc(100vh-90px);
+  display: flex;
 }
 
 main .wrapper{
-  display: flex;
   height: 100%;
+  width: 100%;
 }
 
 aside{
   width: 230px;
   flex-shrink: 0;
+  background-color: var(--black);
+  color: var(--text-color);
 }
 
 main .topbar{
   height:90px;
-  width: 100%;
+  background-color: var(--sec-color);
+  color: white;
 }
+
 
 main .container{
   width: calc(100%-230px);
+  overflow: auto;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.container .topbar button{
+  border: 1px solid white;
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: var(--sec-color);
+}
+
+.container .topbar button a{
+  text-decoration: none;
+  color: white;
+}
+
+.container ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+} 
+
+.container ul li{
+  padding: 20px;
+}
+
+h2 {
+  color: white ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 main .cards .row{
@@ -53,10 +89,17 @@ main .cards .row{
 main .cards .row .col{
   width: calc(100%/6);
   height: 280px;
+  text-align: center;
+  padding: 5px;
 }
 
+main .cards .row .col h3{
+  color: white;
+}
 
-
+main .cards .row .col img{
+  width: 100%;
+}
 
 /* /MAIN */
 
@@ -64,4 +107,6 @@ main .cards .row .col{
 
 footer{
   height: 90px;
+  background-color: var(--third-color);
+  color: white;
 }
