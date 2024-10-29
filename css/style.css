@@ -6,6 +6,7 @@
 
 body{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 0.8rem;
 }
 
 :root{
@@ -39,10 +40,12 @@ aside{
   color: var(--text-color);
 }
 
-main .topbar{
+main .wrapper .container .topbar{
   height:90px;
   background-color: var(--sec-color);
   color: white;
+  justify-content: end;
+  align-items: center;
 }
 
 
@@ -72,7 +75,7 @@ main .container{
 } 
 
 .container ul li{
-  padding: 20px;
+  padding: 5px 20px 5px 20px;
 }
 
 h2 {
@@ -88,6 +91,7 @@ section{
 main .cards .row{
   display: flex;
   margin: 20px 0 0 20px;
+  flex-wrap: wrap;
 }
 
 main .cards .row .col{
@@ -134,3 +138,39 @@ footer{
   background-color: var(--third-color);
   color: white;
 }
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1100px) {
+  
+  main .cards .row .col{
+    width: calc(100%/4);
+  }
+
+  main .cards .row .col p{
+    padding: 10px;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width:700px) {
+  main .cards .row .col{
+    width: calc(100%/2);
+    margin-bottom: 25px;
+  }
+
+  .container ul{
+    flex-wrap: wrap;
+  }
+
+  h2{
+    margin-top: 0;
+  }
+}
+
