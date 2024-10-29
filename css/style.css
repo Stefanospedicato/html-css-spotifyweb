@@ -78,12 +78,16 @@ main .container{
 h2 {
   color: white ;
   margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+section{
+  margin-top: 50px;
 }
 
 main .cards .row{
   display: flex;
+  margin: 20px 0 0 20px;
 }
 
 main .cards .row .col{
@@ -93,12 +97,32 @@ main .cards .row .col{
   padding: 5px;
 }
 
+main .for-me .cards .row .col{
+  height: 250px;
+}
+
+main .popular .cards .row .col{
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+
 main .cards .row .col h3{
   color: white;
 }
 
+.dida{
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 main .cards .row .col img{
   width: 100%;
+}
+
+main .popular .cards .row .col img{
+  width: 100%;
+  border-radius: 50%;
 }
 
 /* /MAIN */
