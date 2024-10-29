@@ -40,6 +40,35 @@ aside{
   color: var(--text-color);
 }
 
+aside ul{
+  list-style: none;
+}
+
+aside ul li{
+  margin: 20px;
+}
+
+aside ul li img{
+  width: 30px;
+  margin-right: 5px;
+}
+
+aside ul li a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+aside .logo{
+  width: 170px;
+  margin: 15px;
+}
+
+aside h3{
+  color: white;
+  font-size: 1.3rem;
+  margin: 20px;
+}
+
 main .wrapper .container .topbar{
   height:90px;
   background-color: var(--sec-color);
