@@ -33,18 +33,13 @@ main .wrapper{
   height: calc(100% - 90px);
 }
 
-footer{
-  height: 90px;
-  background-color: var(--third-color);
-  color: white;
-}
 
 aside{
   width: 230px;
   background-color: var(--black);
   color: var(--text-color);
   height: 100%;
-
+  
 }
 
 aside .top{
@@ -221,7 +216,80 @@ main .popular .cards .row .col img{
 
 /* /MAIN */
 
-/* FOOTER */
+footer{
+  height: 90px;
+  background-color: var(--third-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .brano{
+  display: flex;
+}
+
+footer img{
+  width: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+footer p{
+  color: var(--text-color);
+}
+
+footer .brano i{
+  color: var(--text-color);
+  padding-right: 15px;
+}
+
+footer .brano span{
+  margin-left: 30px;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .player span{
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer .player i{
+  margin-right: 30px;
+  font-size: 1.6rem;
+}
+
+footer .minutes span{
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer .player hr{
+  width: 480px;
+  color: var(--text-color);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+footer .volume hr{
+  width: 70px;
+  margin-right: 10px;
+}
+
+footer .volume i{
+  margin-right: 10px;
+}
+
+footer .volume{
+  display: flex;
+}
+
+
 
 
 
@@ -232,11 +300,11 @@ main .popular .cards .row .col img{
   main .cards .row .col{
     width: calc(100%/4);
   }
-
+  
   main .cards .row .col p{
     padding: 10px;
   }
-
+  
   h2{
     font-size: 1.5rem;
   }
