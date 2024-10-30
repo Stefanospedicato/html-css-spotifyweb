@@ -254,6 +254,12 @@ footer .brano span{
   justify-content: center;
 }
 
+footer .player{
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer .player span{
   color: white;
   font-size: 1.5rem;
@@ -269,16 +275,20 @@ footer .minutes span{
   font-size: 0.8rem;
 }
 
-footer .player hr{
+footer .player .barra{
   width: 480px;
-  color: var(--text-color);
-  margin-left: 50px;
-  margin-right: 50px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  margin: 15px;
 }
 
-footer .volume hr{
+footer .volume .barra-volume{
   width: 70px;
+  height: 5px;
+  background-color: var(--text-color);
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 footer .volume i{
@@ -287,6 +297,7 @@ footer .volume i{
 
 footer .volume{
   display: flex;
+  justify-content: space-around;
 }
 
 
