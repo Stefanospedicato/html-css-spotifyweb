@@ -57,10 +57,6 @@ aside .bottom hr{
   margin-bottom: 10px;
 }
 
-aside ul li.crea{
-  margin-left: 10px;
-}
-
 aside .top ul li i{
   font-size: 2.3rem;
   padding-right: 10px;
@@ -83,7 +79,7 @@ aside ul{
 }
 
 aside ul li{
-  margin-left:15px;
+  padding-left:15px;
   margin-bottom: 10px;
 }
 
@@ -135,6 +131,10 @@ aside .bottom .flex:hover{
   color: white;
 }
 
+main .wrapper .top ul li:active{
+  border-left: 3px solid yellowgreen;
+}
+
 /* ***** /ASIDE ****** */
 
 
@@ -144,6 +144,11 @@ main .wrapper .container .topbar{
   color: white;
   position: relative;
   opacity: 0.8;
+}
+
+
+main .wrapper .top{
+  padding-left: 15px;
 }
 
 .container .topbar button{
@@ -192,7 +197,6 @@ main .container{
 }
 
 .container ul li:active{
-  border-width: 5px;
   border-bottom: 3px solid yellowgreen;
 }
 
@@ -217,6 +221,26 @@ main .cards .row .col{
   height: 280px;
   text-align: center;
   padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+main .cards .row .col:hover{
+  opacity: 0.5;
+}
+
+main .cards .row .col i.hidden{
+  position: absolute;
+  display: none;
+  top:30%;
+  left:35%;
+  font-size: 4rem;
+  cursor: pointer;
+  color: white;
+}
+
+main .cards .row .col:hover i.hidden{
+  display: block;
 }
 
 main .for-me .cards .row .col{
@@ -241,11 +265,6 @@ main .cards .row .col h3{
 main .cards .row .col img{
   width: 100%;
   cursor: pointer;
-}
-
-main .cards .row .col img:hover{
-  opacity: 0.5;
-  
 }
 
 main .popular .cards .row .col img{
@@ -339,6 +358,10 @@ footer .player .barra{
   cursor: pointer;
 }
 
+footer .player .barra:hover{
+  background-color: yellowgreen;
+}
+
 footer .volume .barra-volume{
   width: 90px;
   height: 5px;
@@ -346,6 +369,10 @@ footer .volume .barra-volume{
   margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+footer .volume .barra-volume:hover{
+  background-color: yellowgreen;
 }
 
 footer .volume i{
