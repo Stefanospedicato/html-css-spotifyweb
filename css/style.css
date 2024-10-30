@@ -19,25 +19,69 @@ body{
 
 }
 
-.debug{
+/* .debug{
   background-color: rgba(147, 233, 233, .3);
   border: 1px solid black;
-}
+} */
 
 main{
-  display: flex;
+  height: 100vh;
 }
 
 main .wrapper{
-  height: 100%;
-  width: 100%;
+  display: flex;
+  height: calc(100% - 90px);
+}
+
+footer{
+  height: 90px;
+  background-color: var(--third-color);
+  color: white;
 }
 
 aside{
   width: 230px;
-  flex-shrink: 0;
   background-color: var(--black);
   color: var(--text-color);
+  height: 100%;
+
+}
+
+aside .top{
+  height: calc(100% - 80px);
+}
+
+aside .bottom{
+  height:80px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+aside .bottom hr{
+  color: var(--text-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+aside ul li.crea{
+  margin-left: 10px;
+}
+
+aside .top ul li i{
+  font-size: 2.3rem;
+  padding-right: 10px;
+}
+
+aside .bottom img{
+  width: 25px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+}
+
+
+aside .bottom span{
+  color: white;
+  font-weight: bold;
 }
 
 aside ul{
@@ -45,7 +89,8 @@ aside ul{
 }
 
 aside ul li{
-  margin: 20px;
+  margin-left:15px;
+  margin-bottom: 10px;
 }
 
 aside ul li img{
@@ -63,6 +108,16 @@ aside .logo{
   margin: 15px;
 }
 
+aside .logo-small{
+  display: none;
+  width: 35px;
+  margin: 10px;
+}
+
+aside .icon-hide{
+  display: none;
+}
+
 aside h3{
   color: white;
   font-size: 1.3rem;
@@ -73,8 +128,8 @@ main .wrapper .container .topbar{
   height:90px;
   background-color: var(--sec-color);
   color: white;
-  justify-content: end;
-  align-items: center;
+  position: relative;
+  opacity: 0.8;
 }
 
 
@@ -90,6 +145,9 @@ main .container{
   padding: 10px 40px;
   border-radius: 30px;
   background-color: var(--sec-color);
+  position: absolute;
+  top: 25px;
+  right: 55px;
 }
 
 .container .topbar button a{
@@ -102,6 +160,9 @@ main .container{
   list-style: none;
   justify-content: center;
 } 
+.container .topmenu{
+  margin-top: 15px;
+}
 
 .container ul li{
   padding: 5px 20px 5px 20px;
@@ -162,11 +223,6 @@ main .popular .cards .row .col img{
 
 /* FOOTER */
 
-footer{
-  height: 90px;
-  background-color: var(--third-color);
-  color: white;
-}
 
 
 /* MEDIA QUERY */
@@ -212,4 +268,40 @@ footer{
   main .container{
     width: calc(100%-50px);
   }
+
+  .top .logo{
+    display: none;
+  }
+
+  .top .logo-small{
+    display: block;
+  }
+
+  .top ul{
+    display: none;
+  }
+
+  .top .icon-hide{
+    display: block;
+    width: 35px;
+    margin: 10px;
+  }
+  
+  .top h3{
+    display: none;
+  }
+  
+  .bottom span{
+    display: none;
+  }
+
+  .bottom img{
+    width: 20px;
+  }
+
+  .bottom i{
+    margin-left: 5px;
+  }
 }
+
+
