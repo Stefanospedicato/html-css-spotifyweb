@@ -146,9 +146,17 @@ main .wrapper .container .topbar{
   opacity: 0.8;
 }
 
+main .wrapper .top ul.playlist{
+height: 190px;
+overflow: auto;
+}
+main .wrapper .top .icons{
+  
+}
 
 main .wrapper .top{
   padding-left: 15px;
+  height: calc(100% - 90px)
 }
 
 .container .topbar button{
@@ -171,8 +179,6 @@ main .container{
   background-color: var(--primary-color);
   color: var(--text-color);
 }
-
-
 
 .container .topbar button a{
   text-decoration: none;
@@ -327,15 +333,16 @@ footer .player{
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 100%;
 }
 
 footer .player i.higher:hover{
   transform: scale(1.3);
 }
 
-footer .player span{
-  color: white;;
+footer .player .tasti{
+  width: 70%;
+  color: white;
 }
 
 footer .player i{
@@ -350,7 +357,7 @@ footer .minutes span{
 }
 
 footer .player .barra{
-  width: 480px;
+  width: 70%;
   height: 5px;
   background-color: var(--text-color);
   border-radius: 5px;
@@ -434,6 +441,11 @@ footer .volume{
     width: calc(100%-50px);
   }
 
+  main .wrapper .top {
+    padding-left: 0;
+
+  }
+
   .top .logo{
     display: none;
   }
@@ -460,13 +472,21 @@ footer .volume{
     display: none;
   }
 
+  .bottom .flex p{
+    display: none;
+  }
+
   .bottom img{
     width: 20px;
+    margin-bottom: 10px;
   }
 
   .bottom i{
     margin-left: 5px;
   }
+
+  footer .player{
+    width: 30%
 }
 
-
+}
