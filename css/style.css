@@ -77,10 +77,31 @@ aside .bottom span{
 
 aside ul{
   list-style: none;
+  margin-top: 10px;
 }
 
-aside ul.icons{
+aside p a{
+  color: var(--text-color);
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+aside p a i{
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+aside ul .icons{
   height: 20%;
+}
+
+aside .play{
+  height: calc(100% - 150px);
+}
+
+aside .playlist{
+  height: 40%;
+  overflow: auto;
 }
 
 aside ul li{
@@ -121,7 +142,6 @@ aside h3{
   height: 3%;
 }
 
-
 aside .bottom p{
   margin-left: 5px;
   cursor: pointer;
@@ -147,11 +167,6 @@ main .wrapper .container .topbar{
   color: white;
   position: relative;
   opacity: 0.8;
-}
-
-main .wrapper .top ul.playlist{
-  height: 40%;
-  overflow: auto;
 }
 
 main .wrapper .top{
@@ -186,6 +201,7 @@ main .container{
   list-style: none;
   justify-content: center;
 } 
+
 .container .topmenu{
   margin-top: 15px;
 }
@@ -220,11 +236,15 @@ main .cards .row .col{
   cursor: pointer;
 }
 
-main .cards .row .col i.hidden{
+.cards .col .circle{
+  position: relative;
+}
+
+ main .cards .row .col .circle i.hidden{
   position: absolute;
   display: none;
   top:30%;
-  left:35%;
+  left:33%;
   font-size: 4rem;
   cursor: pointer;
   color: white;
@@ -304,6 +324,11 @@ aside ul li a:hover{
   color: white;
 }
 
+aside p a:hover{
+  color: white;
+}
+
+
 /* /HOVER */
 
 /*********** /CONTENT ***********/
@@ -330,6 +355,7 @@ footer img{
   margin-right: 15px;
 
 }
+
 footer p{
   color: var(--text-color);
   cursor: pointer;
@@ -363,10 +389,27 @@ footer .player{
   justify-content: space-between;
   align-items: center;
   width: 70%;
+  height: 100%;
+}
+
+footer .buttons{
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .buttons ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer .buttons li a{
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 footer .player i.higher:hover{
-  transform: scale(1.3);
+  transform: scale(1.4);
 }
 
 footer .player .tasti{
@@ -392,10 +435,25 @@ footer .player .barra{
   border-radius: 5px;
   margin: 15px;
   cursor: pointer;
+  position: relative;
 }
 
-footer .player .barra:hover{
+footer .load{ 
+  position: absolute;
+  width: 30%;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:whitesmoke;
+}
+
+footer .load:hover{
   background-color: yellowgreen;
+}
+
+footer .load::after{
+  font-family: 'Font Awesome\ 5 Free';
+  content:'/f111';
 }
 
 /* /PLAYER */
@@ -415,10 +473,7 @@ footer .volume .barra-volume{
   margin-right: 10px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-footer .volume .barra-volume:hover{
-  background-color: yellowgreen;
+  position: relative;
 }
 
 footer .volume i{
@@ -484,6 +539,10 @@ footer .volume i{
     display: none;
   }
 
+  .top .play p{
+    display: none;
+  }
+
   .top .logo-small{
     display: block;
   }
@@ -518,10 +577,5 @@ footer .volume i{
   .bottom i{
     margin-left: 5px;
   }
-
-  footer .player i{
-    margin: auto;
-    
-}
 
 }

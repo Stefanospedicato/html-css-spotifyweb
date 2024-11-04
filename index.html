@@ -42,19 +42,24 @@
           </div>
         </div>
 
-        <h3>PLAYLIST</h3>
-        
-        <ul class="playlist">
-          <li class="crea"><a href=""><img src="img/" alt=""><i class="fa-solid fa-square-plus"></i>Crea Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-          <li><a href="">Nome Playlist</a></li>
-         
-        </ul>
+        <div class="play">
+
+          <h3>PLAYLIST</h3>
+          <p>
+          <a href=""><img src="" alt=""><i class="fa-solid fa-square-plus"></i>Crea Playlist</a>
+          </p>
+          <ul class="playlist">
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+            <li><a href="">Nome Playlist</a></li>
+          </ul>
+          
+        </div>
+          
 
       </div>
       <div class="bottom">
@@ -91,38 +96,50 @@
           <div class="cards ">
             <div class="row">
               <div class="col">
-                <img src="img/metal_lifting.jpg" alt="metal">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/metal_lifting.jpg" alt="metal">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Heavy Metal</h3>
                 <p>Subtitle</p>
               </div>
               <div class="col">
-                <img src="img/stranger.jpeg" alt="stranger">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/stranger.jpeg" alt="stranger">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                 <p>Kyle Dixon & Michael Stein</p>
               </div>
               <div class="col">
-                <img src="img/aquietplace.jpeg" alt="quiet">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/aquietplace.jpeg" alt="quiet">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>A quiet place</h3>
                 <p>Subtitle</p>
               </div>
               <div class="col">
-                <img src="img/split.jpeg" alt="split">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/split.jpeg" alt="split">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Split</h3>
                 <p>Subtitle</p>
               </div>
               <div class="col">
-                <img src="img/cure.jpeg" alt="cure">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/cure.jpeg" alt="cure">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>A cure for wellness</h3>
                 <p>Subtitle</p>
               </div>
               <div class="col">
-                <img src="img/sinister.jpeg" alt="sinister">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/sinister.jpeg" alt="sinister">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Sinister</h3>
                 <p>Subtitle</p>
               </div>
@@ -138,13 +155,17 @@
           <div class="cards">
             <div class="row">
               <div class="col">
-                <img src="img/radar.jpeg" alt="radar">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/radar.jpeg" alt="radar">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Release Radar</h3>
               </div>
               <div class="col">
-                <img src="img/mixdaily.jpeg" alt="mix">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/mixdaily.jpeg" alt="mix">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Daily Mix 1</h3>
               </div>
             </div>
@@ -158,13 +179,17 @@
           <div class="cards">
             <div class="row">
               <div class="col">
-                <img src="img/youg.jpeg" alt="lana">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/youg.jpeg" alt="youg">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Lana Del Rey</h3>
               </div>
               <div class="col">
-                <img src="img/einaudi.jpeg" alt="einaudi">
-                <i class="fa-regular fa-circle-play hidden"></i>
+                <div class="circle">
+                  <img src="img/einaudi.jpeg" alt="einaudi">
+                  <i class="fa-regular fa-circle-play hidden"></i>
+                </div>
                 <h3>Ludovico Einaudi</h3>
               </div>
             </div>
@@ -198,18 +223,23 @@
       <!-- PLAYER -->
       
     <div class="player">
-        <span class="tasti">
-          <i class="fa-solid fa-shuffle"></i>
-          <i class="fa-solid fa-backward-step"></i>
-          <i class="fa-regular fa-circle-play higher"></i>
-          <i class="fa-solid fa-forward-step"></i>
-          <i class="fa-solid fa-rotate-right"></i>
-        </span>
-        <div class="minutes d-flex">
+      <div class="buttons">
+        <ul>
+          <li><a href=""><i class="fa-solid fa-shuffle"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-backward-step"></i></a></li>
+          <li><a href=""><i class="fa-regular fa-circle-play higher"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-forward-step"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-rotate-right"></i></a></li>
+        </ul>
+      </div>
+        
+      <div class="minutes d-flex">
           <span>0:25</span>
-          <div class="barra"></div>
+          <div class="barra">
+            <div class="load"></div>
+          </div>
           <span>4:35</span>
-        </div>
+      </div>
     </div>
         
       <!-- /PLAYER  -->
@@ -222,7 +252,9 @@
           <i class="fa-solid fa-desktop"></i>
           <i class="fa-solid fa-volume-high"></i>
         </div>
-        <div class="barra-volume"></div>
+        <div class="barra-volume">
+          <div class="load"></div>
+        </div>
     </div>
   
       <!-- /VOLUME -->
