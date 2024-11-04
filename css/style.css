@@ -349,6 +349,14 @@ footer .brano{
   width: 280px;
 }
 
+footer .brano h4{
+  cursor: pointer;
+}
+
+footer .brano p:hover{
+  text-decoration: underline;
+}
+
 footer img{
   width: 40px;
   margin-left: 15px;
@@ -449,11 +457,6 @@ footer .load{
 
 footer .load:hover{
   background-color: yellowgreen;
-}
-
-footer .load::after{
-  font-family: 'Font Awesome\ 5 Free';
-  content:'/f111';
 }
 
 /* /PLAYER */
